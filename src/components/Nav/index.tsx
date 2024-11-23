@@ -55,7 +55,7 @@ const Nav: React.FC = () => {
       >
         <FontAwesomeIcon icon={faArrowUp} />
       </button>
-      <a
+      {/* <a
         className="mc-nav__item"
         href="https://twitter.com/ciesla_michal"
         target="_blank"
@@ -63,7 +63,7 @@ const Nav: React.FC = () => {
         title={t("nav.twitter")}
       >
         <FontAwesomeIcon icon={faTwitter} />
-      </a>
+      </a> */}
       <a
         href="https://mstdn.social/@mciesla"
         className="mc-nav__item"
