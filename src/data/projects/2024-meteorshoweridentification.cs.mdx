@@ -1,0 +1,15 @@
+---
+title: "MeteorShowerIdentification"
+year: 2021
+lang: "cs"
+logo: "https://em-content.zobj.net/source/microsoft/407/shooting-star_1f320.png"
+active: false
+wip: false
+link: "https://github.com/Akimayo/MeteorShowerIdentification/"
+tags:
+  - "Python"
+---
+
+Tématem mé bakalářské práce na MFF UK byla identifikace meteorických rojů. Ta se provádí pomocí měr v prostoru orbitálních parametrů zvaných _$D$-kritéria_.
+
+Program <code>MeteorShowerIdentificationConsole</code> přijímá sadu meteorů a volitelně srovnávaných meteorických rojů a podle $D$-kritérií přiřazuje meteory do meteorických rojů. Jelikož se $D$-kritéria svou matematickou formou brání algoritmické optimalizaci, program byl navržen tak, aby byl co paměťově nejstabilnější, protože s $\mathcal{0}(n^2)$ se kromě paralelizace moc dělat nedalo.

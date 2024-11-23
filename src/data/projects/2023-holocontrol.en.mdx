@@ -1,0 +1,20 @@
+---
+title: "HoloControl"
+year: 2023
+lang: "en"
+active: true
+wip: true
+logo: "../../images/holocontrol.svg"
+link: "https://github.com/Akimayo/HoloControl"
+tags:
+  - "Electronics"
+  - "C"
+  - "C#"
+  - "MAUI"
+---
+
+While picking a student grant at MFF UK, I got interested in updating the holography setup for student labs. Not only did holograms seem immensely cool to me, it was also an opportunity to get some hands-on experience with physics without a tight schedule. While discussing with the supervisor, it became clear that a lot of the setup could be improved with electronic controls.
+
+After a few weeks of toying with mirrors, I got to work designing the electronic circuit for powering the lasers and a light source along with a PCB for it, followed by some C code for the _Raspberry Pi Pico_ used to control the circuit. To make using it as comfortable as possible, I used the (then) new .NET MAUI platform to create a visual app for communicating with the microcontroller and setting exposition times without the need to communicate with the microcontroller in binary over a serial terminal. All of the electronics are housed inside a 3D-printed box I also designed.
+
+The setup encountered a few practical issues, the main one being the finite durability of wires, some of which unfotunately did not survive bending inside the housing, therefore the lab work had to be performed in a limited mode the first time. A year later, I came back to the project to deliver several improvements, which I hope will make the setup work for years on end.

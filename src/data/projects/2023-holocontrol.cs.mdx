@@ -1,0 +1,20 @@
+---
+title: "HoloControl"
+year: 2023
+lang: "en"
+active: true
+wip: true
+logo: "../../images/holocontrol.svg"
+link: "https://github.com/Akimayo/HoloControl"
+tags:
+  - "Elektronika"
+  - "C"
+  - "C#"
+  - "MAUI"
+---
+
+Při výběru studentského fakultního grantu na MFF UK mne zaujala aktualizace úlohy pro praktickou výuku holografie. Kromě toho, že jsou hologramy samy o sobě mimořádně _cool_, jednalo se o příležitost "osahat si" pořádně fyziku, aniž bych musel pospíchat. V průběhu diskusí s vedoucí projektu se také ukázalo, že by velká část úlohy šla vylepšit elektronickým řízením.
+
+Po pár týdnech hraní si se zrcátky jsem se pustli do práce a sestavil jsem novou optickou aparaturu a pustil se do návrhu elektronického obvodu pro napájení laserů a světelného zdroje, kterému následoval vývoj programu pro řízení tohoto obvodu pomocí _Raspberry Pi Pico_ v jazyce C. A aby bylo ovládání co nejpohodlnější, vytvořil jsem ještě na (tehdy) nové platformě .NET MAUI grafickou aplikaci, která přes USB komunikuje s mikropočítačem a umožňuje nastavovat časování bez nutnosti psaní binárních kódů do seériového terminálu. Celá elektronika je zastřešena krabicí vytisknutou na 3D tiskárně, kterou jsem též sám navrhl.
+
+Úloha se setkala s pár praktickými problémy, konkrétně s pouze konečnou odolností drátů vůči ohýbání, bohužel tedy její první běh musel být v omezeném režimu. O rok později jsem se k projektu vrátil a dodal řadu vylepšení, díky kterým snad bude dlouhá léta fungovat.

@@ -1,0 +1,15 @@
+---
+title: "MeteorShowerIdentification"
+year: 2021
+lang: "en"
+logo: "https://em-content.zobj.net/source/microsoft/407/shooting-star_1f320.png"
+active: false
+wip: false
+link: "https://github.com/Akimayo/MeteorShowerIdentification/"
+tags:
+  - "Python"
+---
+
+The topic of my bachelors' thesis at MFF UK was identification of meteor showers. This is done using measures in the space of orbital parameters called _$D$-criteria_.
+
+The `MeteorShowerIdentificationConsole` program takes a set of meteor orbits and optionally a set of meteor _shower_ orbits and assigns the meteors to meteor showers using the $D$-criteria. Since the mathematical form of the $D$-criteria makes them impossible to optimize algorithmically, the program was designed to be as memory stable as possible, because, besides parallelization, there is not much one can do with a $\mathcal{0}(n^2)$ time complexity.
