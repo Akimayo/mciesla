@@ -8,7 +8,7 @@ import Project, { ProjectProps } from "../Project";
 import TimelineItem from "./TimelineItem";
 import "./index-portfolio.scss";
 
-interface IndexPortfolioProps {
+interface IndexPortfolioProps extends React.PropsWithChildren {
   timeline: {
     [year: number]: {
       side: "life" | "work";
@@ -25,6 +25,7 @@ const IndexPortfolio: React.FC<IndexPortfolioProps> = ({
   portfolio,
   currentProject,
   featuredProject,
+  children
 }) => {
   const { t } = useTranslation();
   const [more, setMore] = useState(false);
@@ -83,6 +84,7 @@ const IndexPortfolio: React.FC<IndexPortfolioProps> = ({
       <div className="mc-artery" />
       <div className="mc-portfolio-flex">
         <div className="mc-portfolio__body">
+          {children}
           <div className="mc-portfolio__body-projects">
             <h2>
               <Link to="/projects">{t("nav.projects")}</Link>

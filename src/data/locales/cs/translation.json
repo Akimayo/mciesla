@@ -74,5 +74,27 @@
     "notFound": "Tato stránka neexistuje",
     "back": "Přejít na domovskou stránku",
     "old": "Zkusit najít na"
+  },
+  "announcement": {
+    "web": [
+      "Na této stránce, ",
+      ", vždy najdete aktuální kontakty a místa, kde se se mnou spojit."
+    ],
+    "email": [
+      "E-mailová adresa ",
+      " je pod mou doménou, tedy ať se přestěhuji kamkoliv, na této adrese budu vždy dosažitelný."
+    ],
+    "signal": [
+      "Veškerou osobní komunikaci směřuji na Signal, který je spolehlivý a bezpečný. Pokud máte mé telefonní číslo v kontaktech, najdete mne tam rovnou, jinak mne kontaktujte e-mailem a dám Vám kontakt."
+    ],
+    "mastodon": [
+      "Jedinou \"klasickou\" sociální sítí, kterou používám, je Mastodon, kde mne můžete najít pod ",
+      ".",
+      "Sledovat mne můžete nejen z Mastodonu, ale i z ostatních platforem Fedivesmíru, jako Pixelfed, Akkoma, Misskey/Sharkey a dalších. Máte-li zájem přidat se na některou z těchto sítí a nevíte si rady, rád pomohu."
+    ],
+    "discord": [
+      "Okrajově používám také Discord, ale spíše pro skupinovou komunikaci a plánování. Pokud máte zájem se spojit tam, napiště mi e-mail."
+    ],
+    "others": "Jiné platformy nepoužívám a nemám momentálně v plánu si připojovat na další. Obzvláště se nebudu připojovat na WhatsApp a další platformy společnosti Meta, ani na RedNote. Jsem naopak otevřený se přidat na Matrix, pokud o to bude zájem."
   }
 }

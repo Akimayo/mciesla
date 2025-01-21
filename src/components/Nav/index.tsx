@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import {
   faGithub,
   faMastodon,
-  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Country from "flagit";
@@ -55,15 +54,6 @@ const Nav: React.FC = () => {
       >
         <FontAwesomeIcon icon={faArrowUp} />
       </button>
-      {/* <a
-        className="mc-nav__item"
-        href="https://twitter.com/ciesla_michal"
-        target="_blank"
-        rel="noopener noreferrer"
-        title={t("nav.twitter")}
-      >
-        <FontAwesomeIcon icon={faTwitter} />
-      </a> */}
       <a
         href="https://mstdn.social/@mciesla"
         className="mc-nav__item"

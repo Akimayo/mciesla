@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import IndexPortfolio from "../components/IndexPortfolio";
 import "../scss/main.scss";
 import { IGatsbyImageData } from "gatsby-plugin-image";
+import Announcement from "../components/Announcement";
 
 interface IndexPageData {
   data: {
@@ -44,12 +45,22 @@ interface IndexPageData {
         };
       }[];
     };
+    announcement: {
+      edges: {
+        node: {
+          body: string & React.ReactNode;
+          frontmatter: {
+            until: number | string;
+          }
+        }
+      }[];
+    }
   };
 }
 const IndexPage: React.FC<IndexPageData> = ({ data }) => {
   const currentProject = data.projects.edges
-      .filter(({ node }) => node.frontmatter.wip)
-      .shift(),
+    .filter(({ node }) => node.frontmatter.wip)
+    .shift(),
     featuredProject = data.projects.edges
       .filter(({ node }) => !node.frontmatter.wip)
       .shift();
@@ -82,7 +93,12 @@ const IndexPage: React.FC<IndexPageData> = ({ data }) => {
             slug: featuredProject.node.slug,
           }
         }
-      />
+      >
+        <Announcement
+          children={data.announcement.edges[0].node.body}
+          until={data.announcement.edges[0].node.frontmatter.until}
+        />
+      </IndexPortfolio>
     </Layout>
   );
 };
@@ -153,6 +169,16 @@ export const query = graphql`
           }
           excerpt(pruneLength: 200)
           slug
+        }
+      }
+    }
+    announcement: allMdx(filter: {frontmatter: {lang: {eq: $language}}, slug: {glob: "announcement/announcement*"}}) {
+      edges {
+        node {
+          body
+          frontmatter {
+            until
+          }
         }
       }
     }

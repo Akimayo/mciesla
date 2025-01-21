@@ -1,0 +1,26 @@
+@import "../../scss/theme";
+
+.mc-migration {
+    background-image: $gradient-theme;
+    border-radius: 12px;
+    padding: 4px;
+
+    .mc-migration--content {
+        color: $oxford-blue;
+        background-color: rgba($magnolia, 0.6);
+        backdrop-filter: blur(32px);
+        padding: 8px 16px;
+        border-radius: 8px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .mc-migration--content {
+            color: $magnolia;
+            background-color: rgba($oxford-blue, 0.6);
+        }
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        margin-right: -40%;
+    }
+}

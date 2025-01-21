@@ -74,5 +74,27 @@
     "notFound": "The requested page doesn't exist",
     "back": "Go to homepage",
     "old": "Try finding at"
+  },
+  "announcement": {
+    "web": [
+      "You can always find up-to-date ways to get in touch with me on this website, ",
+      "."
+    ],
+    "email": [
+      "The e-mail address ",
+      " is under a domain owned by me, therefore even in case I decide to change providers, I will always be reachable under this address."
+    ],
+    "signal": [
+      "I now direct all personal communication over to Signal, which is reliable and secure. If you have my phone number in your contacts already, you will have no issue reaching me there, otherwise send me an email and I'll send you my contact."
+    ],
+    "mastodon": [
+      "The only 'classical' social network I use is Mastodon, where you can find me under ",
+      ".",
+      "You can also follow me from other Fediverse platforms such as Pixelfed, Akkoma, and Misskey/Sharkey. If you want to join any of these, I'll be happy to help."
+    ],
+    "discord": [
+      "I sometimes use Discord as well, but mostly for group communication and planning. If you want to get in touch over there, write me an email."
+    ],
+    "others": "I don't use any other platform and do not intend to joining any others at this moment. I will especially not be joining WhatsApp or any other Meta platforms, or RedNote. On the other hand, I am open to joining Matrix if there is reasonable demand."
   }
 }
